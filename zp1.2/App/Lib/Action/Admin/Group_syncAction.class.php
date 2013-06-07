@@ -7,7 +7,12 @@ class Group_syncAction extends CommonAction {
 	 * 显示首页列表
 	 */
 	public function index() {
+        import('@.Admin.cls_netdo');
+        $m = M('Group_sync');
+        $data = $m->select();
+//        $this->assgin('list', $data);
 
+        $this->display();
     }
 }
 ?>

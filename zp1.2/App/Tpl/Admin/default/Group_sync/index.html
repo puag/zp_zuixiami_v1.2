@@ -34,8 +34,10 @@
             <tr>
                 <th width="40"><input type="checkbox" group="ids" class="checkboxCtrl" /></th>
                 <th>id</th>
-                <th>团队名称</th>
-                <th>创建时间</th>
+                <th>QQ群号</th>
+                <th>QQ群名称</th>
+                <th>QQ号</th>
+                <th>QQ昵称</th>
                 <th width="30%">操作</th>
             </tr>
             </thead>
@@ -45,7 +47,6 @@
                     <td width="40"><input name="ids" value="{$vo['id']}" type="checkbox" /></td>
                     <td>{$vo['id']}</td>
                     <td>{$vo['teamname']}</td>
-                    <td>{$vo['creatime']|inttodate}</td>
                     <td>
                         <a class="edit" href="__GROUP__/Team_work/index/id/{$vo['id']}/navTabId/__MODULE__"  target="navTab" rel="Team_word_id{$val['id']}"><span>团队作品管理</span></a>
                         <a class="edit" href="__GROUP__/Team_qunmember/index/id/{$vo['id']}/navTabId/__MODULE__"  target="navTab" rel="Tag_relationship_id{$val['id']}"><span>团队成员管理</span></a>

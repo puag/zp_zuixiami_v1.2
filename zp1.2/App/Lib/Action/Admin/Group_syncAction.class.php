@@ -8,10 +8,9 @@ class Group_syncAction extends CommonAction {
 	 */
 	public function index() {
         import('@.Admin.cls_netdo');
-        $m = M('Group_sync');
+        $m = M('t_members');
         $data = $m->select();
-//        $this->assgin('list', $data);
-
+        $this->assign('list', $data);
         $this->display();
     }
 }
